@@ -1,0 +1,45 @@
+package carton.pm.bouee;
+
+import android.appwidget.AppWidgetManager;
+import android.appwidget.AppWidgetProvider;
+import android.content.Context;
+import android.widget.RemoteViews;
+
+import java.util.Random;
+
+public class BoueeWidgetProvider extends AppWidgetProvider {
+
+  @Override
+  public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
+
+    // In case there are multiple widgets
+    final int count = appWidgetIds.length;
+
+    for (int i = 0; i < count; i++) {
+      int widgetId = appWidgetIds[i];
+
+      // Get the forecast
+      ForecastResponse
+
+      // Get all the dayview components
+      String swellSize = String.format("%d", (new Random().nextInt(12)));
+      RemoteViews remoteViews = new RemoteViews(context.getPackageName(),
+          R.layout.dayview_component);
+      remoteViews.setTextViewText(R.id.dayview_label, "TUE");
+      remoteViews.setTextViewText(R.id.dayview_size, swellSize);
+
+//      for(int dvIndex = 0; i < )
+
+
+//            Intent intent = new Intent(context, BoueeWidgetProvider.class);
+//            intent.setAction(AppWidgetManager.ACTION_APPWIDGET_UPDATE);
+//            intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, appWidgetIds);
+
+//            PendingIntent pendingIntent = PendingIntent.getBroadcast(context,
+//                    0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+//            remoteViews.setOnClickPendingIntent(R.id.actionButton, pendingIntent);
+
+      appWidgetManager.updateAppWidget(widgetId, remoteViews);
+    }
+  }
+}

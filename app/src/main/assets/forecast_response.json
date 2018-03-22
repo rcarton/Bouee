@@ -1,0 +1,2303 @@
+[
+  {
+    "timestamp": 1521612000,
+    "localTimestamp": 1521590400,
+    "issueTimestamp": 1521612000,
+    "fadedRating": 1,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 2.52,
+      "absMaxBreakingHeight": 3.93,
+      "probability": 100,
+      "unit": "ft",
+      "minBreakingHeight": 3,
+      "maxBreakingHeight": 4,
+      "components": {
+        "combined": {
+          "height": 5.5,
+          "period": 7,
+          "direction": 288.84,
+          "compassDirection": "ESE"
+        },
+        "primary": {
+          "height": 5.5,
+          "period": 7,
+          "direction": 271.46,
+          "compassDirection": "E"
+        }
+      }
+    },
+    "wind": {
+      "speed": 22,
+      "direction": 228,
+      "compassDirection": "NE",
+      "chill": -6,
+      "gusts": 32,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1007,
+      "temperature": 4,
+      "weather": "20",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-2.msw.ms/wave/750/20-1521612000-1.gif",
+      "period": "https://hist-2.msw.ms/wave/750/20-1521612000-2.gif",
+      "wind": "https://hist-2.msw.ms/gfs/750/20-1521612000-4.gif",
+      "pressure": "https://hist-2.msw.ms/gfs/750/20-1521612000-3.gif",
+      "sst": "https://hist-2.msw.ms/sst/750/20-1521612000-10.gif"
+    }
+  },
+  {
+    "timestamp": 1521622800,
+    "localTimestamp": 1521601200,
+    "issueTimestamp": 1521612000,
+    "fadedRating": 1,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 3.09,
+      "absMaxBreakingHeight": 4.83,
+      "probability": 100,
+      "unit": "ft",
+      "minBreakingHeight": 3,
+      "maxBreakingHeight": 5,
+      "components": {
+        "combined": {
+          "height": 6.5,
+          "period": 7,
+          "direction": 288.96,
+          "compassDirection": "ESE"
+        },
+        "primary": {
+          "height": 6.5,
+          "period": 7,
+          "direction": 272.9,
+          "compassDirection": "E"
+        }
+      }
+    },
+    "wind": {
+      "speed": 22,
+      "direction": 223,
+      "compassDirection": "NE",
+      "chill": -7,
+      "gusts": 33,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1006,
+      "temperature": 3,
+      "weather": "33",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-3.msw.ms/wave/750/20-1521622800-1.gif",
+      "period": "https://hist-3.msw.ms/wave/750/20-1521622800-2.gif",
+      "wind": "https://hist-3.msw.ms/gfs/750/20-1521622800-4.gif",
+      "pressure": "https://hist-3.msw.ms/gfs/750/20-1521622800-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521633600,
+    "localTimestamp": 1521612000,
+    "issueTimestamp": 1521633600,
+    "fadedRating": 1,
+    "solidRating": 1,
+    "swell": {
+      "absMinBreakingHeight": 3.59,
+      "absMaxBreakingHeight": 5.61,
+      "probability": 100,
+      "unit": "ft",
+      "minBreakingHeight": 4,
+      "maxBreakingHeight": 6,
+      "components": {
+        "combined": {
+          "height": 7.5,
+          "period": 8,
+          "direction": 295.8,
+          "compassDirection": "ESE"
+        },
+        "primary": {
+          "height": 7.5,
+          "period": 8,
+          "direction": 274.52,
+          "compassDirection": "E"
+        }
+      }
+    },
+    "wind": {
+      "speed": 24,
+      "direction": 221,
+      "compassDirection": "NE",
+      "chill": -9,
+      "gusts": 33,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1005,
+      "temperature": 1,
+      "weather": "26",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-3.msw.ms/wave/750/20-1521633600-1.gif",
+      "period": "https://hist-3.msw.ms/wave/750/20-1521633600-2.gif",
+      "wind": "https://hist-3.msw.ms/gfs/750/20-1521633600-4.gif",
+      "pressure": "https://hist-3.msw.ms/gfs/750/20-1521633600-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521644400,
+    "localTimestamp": 1521622800,
+    "issueTimestamp": 1521633600,
+    "fadedRating": 1,
+    "solidRating": 1,
+    "swell": {
+      "absMinBreakingHeight": 3.89,
+      "absMaxBreakingHeight": 6.09,
+      "probability": 100,
+      "unit": "ft",
+      "minBreakingHeight": 4,
+      "maxBreakingHeight": 6,
+      "components": {
+        "combined": {
+          "height": 8,
+          "period": 9,
+          "direction": 296.62,
+          "compassDirection": "ESE"
+        },
+        "primary": {
+          "height": 8,
+          "period": 9,
+          "direction": 276.12,
+          "compassDirection": "E"
+        }
+      }
+    },
+    "wind": {
+      "speed": 22,
+      "direction": 216,
+      "compassDirection": "NE",
+      "chill": -8,
+      "gusts": 31,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1004,
+      "temperature": 1,
+      "weather": "26",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-4.msw.ms/wave/750/20-1521644400-1.gif",
+      "period": "https://hist-4.msw.ms/wave/750/20-1521644400-2.gif",
+      "wind": "https://hist-4.msw.ms/gfs/750/20-1521644400-4.gif",
+      "pressure": "https://hist-4.msw.ms/gfs/750/20-1521644400-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521655200,
+    "localTimestamp": 1521633600,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 1,
+    "solidRating": 1,
+    "swell": {
+      "absMinBreakingHeight": 4.19,
+      "absMaxBreakingHeight": 6.55,
+      "probability": 100,
+      "unit": "ft",
+      "minBreakingHeight": 4,
+      "maxBreakingHeight": 7,
+      "components": {
+        "combined": {
+          "height": 8.5,
+          "period": 9,
+          "direction": 295.61,
+          "compassDirection": "ESE"
+        },
+        "primary": {
+          "height": 8.5,
+          "period": 9,
+          "direction": 275.87,
+          "compassDirection": "E"
+        }
+      }
+    },
+    "wind": {
+      "speed": 25,
+      "direction": 212,
+      "compassDirection": "NNE",
+      "chill": -9,
+      "gusts": 33,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1004,
+      "temperature": 1,
+      "weather": "26",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-4.msw.ms/wave/750/20-1521655200-1.gif",
+      "period": "https://hist-4.msw.ms/wave/750/20-1521655200-2.gif",
+      "wind": "https://hist-4.msw.ms/gfs/750/20-1521655200-4.gif",
+      "pressure": "https://hist-4.msw.ms/gfs/750/20-1521655200-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521666000,
+    "localTimestamp": 1521644400,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 1,
+    "solidRating": 1,
+    "swell": {
+      "absMinBreakingHeight": 4.09,
+      "absMaxBreakingHeight": 6.39,
+      "probability": 100,
+      "unit": "ft",
+      "minBreakingHeight": 4,
+      "maxBreakingHeight": 6,
+      "components": {
+        "combined": {
+          "height": 8,
+          "period": 10,
+          "direction": 291.88,
+          "compassDirection": "ESE"
+        },
+        "primary": {
+          "height": 8,
+          "period": 10,
+          "direction": 277.16,
+          "compassDirection": "E"
+        }
+      }
+    },
+    "wind": {
+      "speed": 18,
+      "direction": 199,
+      "compassDirection": "NNE",
+      "chill": -7,
+      "gusts": 28,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1003,
+      "temperature": 1,
+      "weather": "26",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-5.msw.ms/wave/750/20-1521666000-1.gif",
+      "period": "https://hist-5.msw.ms/wave/750/20-1521666000-2.gif",
+      "wind": "https://hist-5.msw.ms/gfs/750/20-1521666000-4.gif",
+      "pressure": "https://hist-5.msw.ms/gfs/750/20-1521666000-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521676800,
+    "localTimestamp": 1521655200,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 1,
+    "solidRating": 1,
+    "swell": {
+      "absMinBreakingHeight": 4.05,
+      "absMaxBreakingHeight": 6.33,
+      "probability": 100,
+      "unit": "ft",
+      "minBreakingHeight": 4,
+      "maxBreakingHeight": 6,
+      "components": {
+        "combined": {
+          "height": 8,
+          "period": 10,
+          "direction": 288.97,
+          "compassDirection": "ESE"
+        },
+        "primary": {
+          "height": 8,
+          "period": 10,
+          "direction": 275.1,
+          "compassDirection": "E"
+        }
+      }
+    },
+    "wind": {
+      "speed": 23,
+      "direction": 197,
+      "compassDirection": "NNE",
+      "chill": -7,
+      "gusts": 33,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1004,
+      "temperature": 2,
+      "weather": "26",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-1.msw.ms/wave/750/20-1521676800-1.gif",
+      "period": "https://hist-1.msw.ms/wave/750/20-1521676800-2.gif",
+      "wind": "https://hist-1.msw.ms/gfs/750/20-1521676800-4.gif",
+      "pressure": "https://hist-1.msw.ms/gfs/750/20-1521676800-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521687600,
+    "localTimestamp": 1521666000,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 1,
+    "solidRating": 1,
+    "swell": {
+      "absMinBreakingHeight": 3.9,
+      "absMaxBreakingHeight": 6.1,
+      "probability": 100,
+      "unit": "ft",
+      "minBreakingHeight": 4,
+      "maxBreakingHeight": 6,
+      "components": {
+        "combined": {
+          "height": 7.5,
+          "period": 10,
+          "direction": 287.7,
+          "compassDirection": "ESE"
+        },
+        "primary": {
+          "height": 7.5,
+          "period": 10,
+          "direction": 273.15,
+          "compassDirection": "E"
+        }
+      }
+    },
+    "wind": {
+      "speed": 22,
+      "direction": 194,
+      "compassDirection": "NNE",
+      "chill": -7,
+      "gusts": 33,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1005,
+      "temperature": 2,
+      "weather": "26",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-2.msw.ms/wave/750/20-1521687600-1.gif",
+      "period": "https://hist-2.msw.ms/wave/750/20-1521687600-2.gif",
+      "wind": "https://hist-2.msw.ms/gfs/750/20-1521687600-4.gif",
+      "pressure": "https://hist-2.msw.ms/gfs/750/20-1521687600-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521698400,
+    "localTimestamp": 1521676800,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 1,
+    "solidRating": 1,
+    "swell": {
+      "absMinBreakingHeight": 3.87,
+      "absMaxBreakingHeight": 6.05,
+      "probability": 95,
+      "unit": "ft",
+      "minBreakingHeight": 4,
+      "maxBreakingHeight": 6,
+      "components": {
+        "combined": {
+          "height": 7,
+          "period": 10,
+          "direction": 287.39,
+          "compassDirection": "ESE"
+        },
+        "primary": {
+          "height": 6.5,
+          "period": 10,
+          "direction": 283.21,
+          "compassDirection": "ESE"
+        },
+        "secondary": {
+          "height": 3,
+          "period": 4,
+          "direction": 190.19,
+          "compassDirection": "N"
+        }
+      }
+    },
+    "wind": {
+      "speed": 21,
+      "direction": 174,
+      "compassDirection": "N",
+      "chill": -7,
+      "gusts": 32,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1005,
+      "temperature": 2,
+      "weather": "26",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-2.msw.ms/wave/750/20-1521698400-1.gif",
+      "period": "https://hist-2.msw.ms/wave/750/20-1521698400-2.gif",
+      "wind": "https://hist-2.msw.ms/gfs/750/20-1521698400-4.gif",
+      "pressure": "https://hist-2.msw.ms/gfs/750/20-1521698400-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521709200,
+    "localTimestamp": 1521687600,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 1,
+    "solidRating": 1,
+    "swell": {
+      "absMinBreakingHeight": 3.28,
+      "absMaxBreakingHeight": 5.12,
+      "probability": 95,
+      "unit": "ft",
+      "minBreakingHeight": 3,
+      "maxBreakingHeight": 5,
+      "components": {
+        "combined": {
+          "height": 6.5,
+          "period": 10,
+          "direction": 289.72,
+          "compassDirection": "ESE"
+        },
+        "primary": {
+          "height": 5.5,
+          "period": 10,
+          "direction": 278.43,
+          "compassDirection": "E"
+        },
+        "secondary": {
+          "height": 1.6,
+          "period": 10,
+          "direction": 339.31,
+          "compassDirection": "SSE"
+        },
+        "tertiary": {
+          "height": 3,
+          "period": 4,
+          "direction": 180.68,
+          "compassDirection": "N"
+        }
+      }
+    },
+    "wind": {
+      "speed": 19,
+      "direction": 170,
+      "compassDirection": "N",
+      "chill": -6,
+      "gusts": 32,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1006,
+      "temperature": 2,
+      "weather": "33",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-3.msw.ms/wave/750/20-1521709200-1.gif",
+      "period": "https://hist-3.msw.ms/wave/750/20-1521709200-2.gif",
+      "wind": "https://hist-3.msw.ms/gfs/750/20-1521709200-4.gif",
+      "pressure": "https://hist-3.msw.ms/gfs/750/20-1521709200-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521720000,
+    "localTimestamp": 1521698400,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 1,
+    "solidRating": 1,
+    "swell": {
+      "absMinBreakingHeight": 2.76,
+      "absMaxBreakingHeight": 4.31,
+      "probability": 100,
+      "unit": "ft",
+      "minBreakingHeight": 3,
+      "maxBreakingHeight": 4,
+      "components": {
+        "combined": {
+          "height": 5.5,
+          "period": 9,
+          "direction": 292.02,
+          "compassDirection": "ESE"
+        },
+        "primary": {
+          "height": 4.5,
+          "period": 9,
+          "direction": 276.09,
+          "compassDirection": "E"
+        },
+        "secondary": {
+          "height": 1.8,
+          "period": 10,
+          "direction": 340.76,
+          "compassDirection": "SSE"
+        },
+        "tertiary": {
+          "height": 2.5,
+          "period": 4,
+          "direction": 169.8,
+          "compassDirection": "N"
+        }
+      }
+    },
+    "wind": {
+      "speed": 15,
+      "direction": 146,
+      "compassDirection": "NW",
+      "chill": -6,
+      "gusts": 26,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1009,
+      "temperature": 1,
+      "weather": "35",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-3.msw.ms/wave/750/20-1521720000-1.gif",
+      "period": "https://hist-3.msw.ms/wave/750/20-1521720000-2.gif",
+      "wind": "https://hist-3.msw.ms/gfs/750/20-1521720000-4.gif",
+      "pressure": "https://hist-3.msw.ms/gfs/750/20-1521720000-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521730800,
+    "localTimestamp": 1521709200,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 1,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 2.41,
+      "absMaxBreakingHeight": 3.76,
+      "probability": 100,
+      "unit": "ft",
+      "minBreakingHeight": 2,
+      "maxBreakingHeight": 4,
+      "components": {
+        "combined": {
+          "height": 4.5,
+          "period": 9,
+          "direction": 285.02,
+          "compassDirection": "ESE"
+        },
+        "primary": {
+          "height": 4,
+          "period": 9,
+          "direction": 274.36,
+          "compassDirection": "E"
+        },
+        "secondary": {
+          "height": 1.5,
+          "period": 10,
+          "direction": 343.47,
+          "compassDirection": "SSE"
+        },
+        "tertiary": {
+          "height": 1.9,
+          "period": 3,
+          "direction": 146.26,
+          "compassDirection": "NNW"
+        }
+      }
+    },
+    "wind": {
+      "speed": 15,
+      "direction": 134,
+      "compassDirection": "NW",
+      "chill": -5,
+      "gusts": 26,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1011,
+      "temperature": 2,
+      "weather": "1",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-4.msw.ms/wave/750/20-1521730800-1.gif",
+      "period": "https://hist-4.msw.ms/wave/750/20-1521730800-2.gif",
+      "wind": "https://hist-4.msw.ms/gfs/750/20-1521730800-4.gif",
+      "pressure": "https://hist-4.msw.ms/gfs/750/20-1521730800-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521741600,
+    "localTimestamp": 1521720000,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 1,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 2.06,
+      "absMaxBreakingHeight": 3.21,
+      "probability": 100,
+      "unit": "ft",
+      "minBreakingHeight": 2,
+      "maxBreakingHeight": 3,
+      "components": {
+        "combined": {
+          "height": 4,
+          "period": 9,
+          "direction": 283.6,
+          "compassDirection": "ESE"
+        },
+        "primary": {
+          "height": 3.5,
+          "period": 9,
+          "direction": 272.97,
+          "compassDirection": "E"
+        },
+        "secondary": {
+          "height": 1.2,
+          "period": 10,
+          "direction": 345.98,
+          "compassDirection": "SSE"
+        },
+        "tertiary": {
+          "height": 1.6,
+          "period": 3,
+          "direction": 129.29,
+          "compassDirection": "NW"
+        }
+      }
+    },
+    "wind": {
+      "speed": 14,
+      "direction": 122,
+      "compassDirection": "WNW",
+      "chill": -4,
+      "gusts": 26,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1011,
+      "temperature": 2,
+      "weather": "1",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-4.msw.ms/wave/750/20-1521741600-1.gif",
+      "period": "https://hist-4.msw.ms/wave/750/20-1521741600-2.gif",
+      "wind": "https://hist-4.msw.ms/gfs/750/20-1521741600-4.gif",
+      "pressure": "https://hist-4.msw.ms/gfs/750/20-1521741600-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521752400,
+    "localTimestamp": 1521730800,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 1,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 1.65,
+      "absMaxBreakingHeight": 2.58,
+      "probability": 100,
+      "unit": "ft",
+      "minBreakingHeight": 2,
+      "maxBreakingHeight": 3,
+      "components": {
+        "combined": {
+          "height": 3.5,
+          "period": 9,
+          "direction": 286.23,
+          "compassDirection": "ESE"
+        },
+        "primary": {
+          "height": 3,
+          "period": 9,
+          "direction": 271.92,
+          "compassDirection": "E"
+        },
+        "secondary": {
+          "height": 1.2,
+          "period": 10,
+          "direction": 347.92,
+          "compassDirection": "SSE"
+        },
+        "tertiary": {
+          "height": 1.5,
+          "period": 3,
+          "direction": 121.43,
+          "compassDirection": "WNW"
+        }
+      }
+    },
+    "wind": {
+      "speed": 14,
+      "direction": 120,
+      "compassDirection": "WNW",
+      "chill": -3,
+      "gusts": 26,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1012,
+      "temperature": 3,
+      "weather": "1",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-5.msw.ms/wave/750/20-1521752400-1.gif",
+      "period": "https://hist-5.msw.ms/wave/750/20-1521752400-2.gif",
+      "wind": "https://hist-5.msw.ms/gfs/750/20-1521752400-4.gif",
+      "pressure": "https://hist-5.msw.ms/gfs/750/20-1521752400-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521763200,
+    "localTimestamp": 1521741600,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 1,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 1.21,
+      "absMaxBreakingHeight": 1.89,
+      "probability": 100,
+      "unit": "ft",
+      "minBreakingHeight": 1,
+      "maxBreakingHeight": 2,
+      "components": {
+        "combined": {
+          "height": 3,
+          "period": 9,
+          "direction": 289.43,
+          "compassDirection": "ESE"
+        },
+        "primary": {
+          "height": 1.9,
+          "period": 8,
+          "direction": 267.54,
+          "compassDirection": "E"
+        },
+        "secondary": {
+          "height": 1.3,
+          "period": 9,
+          "direction": 278.6,
+          "compassDirection": "E"
+        },
+        "tertiary": {
+          "height": 1.7,
+          "period": 3,
+          "direction": 130.51,
+          "compassDirection": "NW"
+        }
+      }
+    },
+    "wind": {
+      "speed": 16,
+      "direction": 138,
+      "compassDirection": "NW",
+      "chill": -4,
+      "gusts": 27,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1014,
+      "temperature": 3,
+      "weather": "10",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-1.msw.ms/wave/750/20-1521763200-1.gif",
+      "period": "https://hist-1.msw.ms/wave/750/20-1521763200-2.gif",
+      "wind": "https://hist-1.msw.ms/gfs/750/20-1521763200-4.gif",
+      "pressure": "https://hist-1.msw.ms/gfs/750/20-1521763200-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521774000,
+    "localTimestamp": 1521752400,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 1,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 1.32,
+      "absMaxBreakingHeight": 2.07,
+      "probability": 100,
+      "unit": "ft",
+      "minBreakingHeight": 1,
+      "maxBreakingHeight": 2,
+      "components": {
+        "combined": {
+          "height": 2.5,
+          "period": 9,
+          "direction": 289.86,
+          "compassDirection": "ESE"
+        },
+        "primary": {
+          "height": 1.9,
+          "period": 10,
+          "direction": 270.88,
+          "compassDirection": "E"
+        },
+        "secondary": {
+          "height": 0.9,
+          "period": 9,
+          "direction": 347.09,
+          "compassDirection": "SSE"
+        },
+        "tertiary": {
+          "height": 1.6,
+          "period": 3,
+          "direction": 138.22,
+          "compassDirection": "NW"
+        }
+      }
+    },
+    "wind": {
+      "speed": 14,
+      "direction": 140,
+      "compassDirection": "NW",
+      "chill": -5,
+      "gusts": 24,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1016,
+      "temperature": 2,
+      "weather": "10",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-2.msw.ms/wave/750/20-1521774000-1.gif",
+      "period": "https://hist-2.msw.ms/wave/750/20-1521774000-2.gif",
+      "wind": "https://hist-2.msw.ms/gfs/750/20-1521774000-4.gif",
+      "pressure": "https://hist-2.msw.ms/gfs/750/20-1521774000-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521784800,
+    "localTimestamp": 1521763200,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 0,
+    "solidRating": 1,
+    "swell": {
+      "absMinBreakingHeight": 1.14,
+      "absMaxBreakingHeight": 1.79,
+      "probability": 100,
+      "unit": "ft",
+      "minBreakingHeight": 1,
+      "maxBreakingHeight": 2,
+      "components": {
+        "combined": {
+          "height": 2,
+          "period": 10,
+          "direction": 286.55,
+          "compassDirection": "ESE"
+        },
+        "primary": {
+          "height": 1.6,
+          "period": 10,
+          "direction": 271,
+          "compassDirection": "E"
+        },
+        "secondary": {
+          "height": 0.8,
+          "period": 9,
+          "direction": 344.72,
+          "compassDirection": "SSE"
+        },
+        "tertiary": {
+          "height": 1.3,
+          "period": 3,
+          "direction": 139.05,
+          "compassDirection": "NW"
+        }
+      }
+    },
+    "wind": {
+      "speed": 11,
+      "direction": 131,
+      "compassDirection": "NW",
+      "chill": -5,
+      "gusts": 18,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1016,
+      "temperature": 1,
+      "weather": "10",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-2.msw.ms/wave/750/20-1521784800-1.gif",
+      "period": "https://hist-2.msw.ms/wave/750/20-1521784800-2.gif",
+      "wind": "https://hist-2.msw.ms/gfs/750/20-1521784800-4.gif",
+      "pressure": "https://hist-2.msw.ms/gfs/750/20-1521784800-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521795600,
+    "localTimestamp": 1521774000,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 0,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 0.99,
+      "absMaxBreakingHeight": 1.55,
+      "probability": 100,
+      "unit": "ft",
+      "minBreakingHeight": 1,
+      "maxBreakingHeight": 2,
+      "components": {
+        "combined": {
+          "height": 1.9,
+          "period": 10,
+          "direction": 284.79,
+          "compassDirection": "ESE"
+        },
+        "primary": {
+          "height": 1.3,
+          "period": 10,
+          "direction": 271.38,
+          "compassDirection": "E"
+        },
+        "secondary": {
+          "height": 0.7,
+          "period": 8,
+          "direction": 341.18,
+          "compassDirection": "SSE"
+        },
+        "tertiary": {
+          "height": 1.2,
+          "period": 3,
+          "direction": 131.07,
+          "compassDirection": "NW"
+        }
+      }
+    },
+    "wind": {
+      "speed": 12,
+      "direction": 128,
+      "compassDirection": "NW",
+      "chill": -6,
+      "gusts": 18,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1016,
+      "temperature": 1,
+      "weather": "10",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-3.msw.ms/wave/750/20-1521795600-1.gif",
+      "period": "https://hist-3.msw.ms/wave/750/20-1521795600-2.gif",
+      "wind": "https://hist-3.msw.ms/gfs/750/20-1521795600-4.gif",
+      "pressure": "https://hist-3.msw.ms/gfs/750/20-1521795600-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521806400,
+    "localTimestamp": 1521784800,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 0,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 0.89,
+      "absMaxBreakingHeight": 1.39,
+      "probability": 100,
+      "unit": "ft",
+      "minBreakingHeight": 1,
+      "maxBreakingHeight": 1,
+      "components": {
+        "combined": {
+          "height": 1.8,
+          "period": 10,
+          "direction": 284.39,
+          "compassDirection": "ESE"
+        },
+        "primary": {
+          "height": 1.2,
+          "period": 10,
+          "direction": 271.64,
+          "compassDirection": "E"
+        },
+        "secondary": {
+          "height": 0.7,
+          "period": 8,
+          "direction": 340.15,
+          "compassDirection": "SSE"
+        },
+        "tertiary": {
+          "height": 1.3,
+          "period": 3,
+          "direction": 130.79,
+          "compassDirection": "NW"
+        }
+      }
+    },
+    "wind": {
+      "speed": 13,
+      "direction": 136,
+      "compassDirection": "NW",
+      "chill": -6,
+      "gusts": 21,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1017,
+      "temperature": 1,
+      "weather": "1",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-3.msw.ms/wave/750/20-1521806400-1.gif",
+      "period": "https://hist-3.msw.ms/wave/750/20-1521806400-2.gif",
+      "wind": "https://hist-3.msw.ms/gfs/750/20-1521806400-4.gif",
+      "pressure": "https://hist-3.msw.ms/gfs/750/20-1521806400-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521817200,
+    "localTimestamp": 1521795600,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 0,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 0.78,
+      "absMaxBreakingHeight": 1.22,
+      "probability": 100,
+      "unit": "ft",
+      "minBreakingHeight": 1,
+      "maxBreakingHeight": 1,
+      "components": {
+        "combined": {
+          "height": 1.7,
+          "period": 9,
+          "direction": 286.32,
+          "compassDirection": "ESE"
+        },
+        "primary": {
+          "height": 1,
+          "period": 10,
+          "direction": 270.89,
+          "compassDirection": "E"
+        },
+        "secondary": {
+          "height": 0.6,
+          "period": 8,
+          "direction": 338.57,
+          "compassDirection": "SSE"
+        },
+        "tertiary": {
+          "height": 1.2,
+          "period": 3,
+          "direction": 135.44,
+          "compassDirection": "NW"
+        }
+      }
+    },
+    "wind": {
+      "speed": 11,
+      "direction": 143,
+      "compassDirection": "NW",
+      "chill": -4,
+      "gusts": 16,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1017,
+      "temperature": 2,
+      "weather": "1",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-4.msw.ms/wave/750/20-1521817200-1.gif",
+      "period": "https://hist-4.msw.ms/wave/750/20-1521817200-2.gif",
+      "wind": "https://hist-4.msw.ms/gfs/750/20-1521817200-4.gif",
+      "pressure": "https://hist-4.msw.ms/gfs/750/20-1521817200-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521828000,
+    "localTimestamp": 1521806400,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 0,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 0.64,
+      "absMaxBreakingHeight": 1,
+      "probability": 80,
+      "unit": "ft",
+      "minBreakingHeight": 1,
+      "maxBreakingHeight": 1,
+      "components": {
+        "combined": {
+          "height": 1.4,
+          "period": 9,
+          "direction": 289.86,
+          "compassDirection": "ESE"
+        },
+        "primary": {
+          "height": 0.6,
+          "period": 8,
+          "direction": 336.83,
+          "compassDirection": "SSE"
+        },
+        "secondary": {
+          "height": 0.7,
+          "period": 9,
+          "direction": 274.07,
+          "compassDirection": "E"
+        },
+        "tertiary": {
+          "height": 0.9,
+          "period": 2,
+          "direction": 131.81,
+          "compassDirection": "NW"
+        }
+      }
+    },
+    "wind": {
+      "speed": 11,
+      "direction": 136,
+      "compassDirection": "NW",
+      "chill": -1,
+      "gusts": 15,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1017,
+      "temperature": 4,
+      "weather": "2",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-4.msw.ms/wave/750/20-1521828000-1.gif",
+      "period": "https://hist-4.msw.ms/wave/750/20-1521828000-2.gif",
+      "wind": "https://hist-4.msw.ms/gfs/750/20-1521828000-4.gif",
+      "pressure": "https://hist-4.msw.ms/gfs/750/20-1521828000-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521838800,
+    "localTimestamp": 1521817200,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 0,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 0.61,
+      "absMaxBreakingHeight": 0.95,
+      "probability": 80,
+      "unit": "ft",
+      "minBreakingHeight": 1,
+      "maxBreakingHeight": 1,
+      "components": {
+        "combined": {
+          "height": 1.4,
+          "period": 9,
+          "direction": 292.73,
+          "compassDirection": "ESE"
+        },
+        "primary": {
+          "height": 0.6,
+          "period": 8,
+          "direction": 335.62,
+          "compassDirection": "SSE"
+        },
+        "secondary": {
+          "height": 0.6,
+          "period": 6,
+          "direction": 263.64,
+          "compassDirection": "E"
+        },
+        "tertiary": {
+          "height": 1,
+          "period": 2,
+          "direction": 126.89,
+          "compassDirection": "NW"
+        }
+      }
+    },
+    "wind": {
+      "speed": 12,
+      "direction": 133,
+      "compassDirection": "NW",
+      "chill": -1,
+      "gusts": 17,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1016,
+      "temperature": 5,
+      "weather": "34",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-5.msw.ms/wave/750/20-1521838800-1.gif",
+      "period": "https://hist-5.msw.ms/wave/750/20-1521838800-2.gif",
+      "wind": "https://hist-5.msw.ms/gfs/750/20-1521838800-4.gif",
+      "pressure": "https://hist-5.msw.ms/gfs/750/20-1521838800-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521849600,
+    "localTimestamp": 1521828000,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 0,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 0.61,
+      "absMaxBreakingHeight": 0.95,
+      "probability": 75,
+      "unit": "ft",
+      "minBreakingHeight": 1,
+      "maxBreakingHeight": 1,
+      "components": {
+        "combined": {
+          "height": 1.7,
+          "period": 3,
+          "direction": 130.36,
+          "compassDirection": "NW"
+        },
+        "primary": {
+          "height": 0.6,
+          "period": 8,
+          "direction": 334.46,
+          "compassDirection": "SSE"
+        },
+        "secondary": {
+          "height": 0.5,
+          "period": 6,
+          "direction": 263.01,
+          "compassDirection": "E"
+        },
+        "tertiary": {
+          "height": 1.4,
+          "period": 3,
+          "direction": 133.53,
+          "compassDirection": "NW"
+        }
+      }
+    },
+    "wind": {
+      "speed": 16,
+      "direction": 142,
+      "compassDirection": "NW",
+      "chill": -3,
+      "gusts": 22,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1018,
+      "temperature": 4,
+      "weather": "16",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-1.msw.ms/wave/750/20-1521849600-1.gif",
+      "period": "https://hist-1.msw.ms/wave/750/20-1521849600-2.gif",
+      "wind": "https://hist-1.msw.ms/gfs/750/20-1521849600-4.gif",
+      "pressure": "https://hist-1.msw.ms/gfs/750/20-1521849600-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521860400,
+    "localTimestamp": 1521838800,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 0,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 0.58,
+      "absMaxBreakingHeight": 0.9,
+      "probability": 75,
+      "unit": "ft",
+      "minBreakingHeight": 1,
+      "maxBreakingHeight": 1,
+      "components": {
+        "combined": {
+          "height": 2,
+          "period": 3,
+          "direction": 143.58,
+          "compassDirection": "NW"
+        },
+        "primary": {
+          "height": 0.6,
+          "period": 8,
+          "direction": 332.42,
+          "compassDirection": "SSE"
+        },
+        "secondary": {
+          "height": 0.5,
+          "period": 5,
+          "direction": 262.45,
+          "compassDirection": "E"
+        },
+        "tertiary": {
+          "height": 1.8,
+          "period": 3,
+          "direction": 146.82,
+          "compassDirection": "NNW"
+        }
+      }
+    },
+    "wind": {
+      "speed": 17,
+      "direction": 153,
+      "compassDirection": "NNW",
+      "chill": -5,
+      "gusts": 24,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1020,
+      "temperature": 2,
+      "weather": "10",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-2.msw.ms/wave/750/20-1521860400-1.gif",
+      "period": "https://hist-2.msw.ms/wave/750/20-1521860400-2.gif",
+      "wind": "https://hist-2.msw.ms/gfs/750/20-1521860400-4.gif",
+      "pressure": "https://hist-2.msw.ms/gfs/750/20-1521860400-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521871200,
+    "localTimestamp": 1521849600,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 0,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 0.5,
+      "absMaxBreakingHeight": 0.77,
+      "probability": 55,
+      "unit": "ft",
+      "minBreakingHeight": 0,
+      "maxBreakingHeight": 1,
+      "components": {
+        "combined": {
+          "height": 1.9,
+          "period": 3,
+          "direction": 162.06,
+          "compassDirection": "NNW"
+        },
+        "primary": {
+          "height": 0.5,
+          "period": 8,
+          "direction": 335.13,
+          "compassDirection": "SSE"
+        },
+        "secondary": {
+          "height": 0.4,
+          "period": 5,
+          "direction": 261.89,
+          "compassDirection": "E"
+        },
+        "tertiary": {
+          "height": 1.8,
+          "period": 3,
+          "direction": 162.01,
+          "compassDirection": "NNW"
+        }
+      }
+    },
+    "wind": {
+      "speed": 14,
+      "direction": 158,
+      "compassDirection": "NNW",
+      "chill": -6,
+      "gusts": 22,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1020,
+      "temperature": 2,
+      "weather": "10",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-2.msw.ms/wave/750/20-1521871200-1.gif",
+      "period": "https://hist-2.msw.ms/wave/750/20-1521871200-2.gif",
+      "wind": "https://hist-2.msw.ms/gfs/750/20-1521871200-4.gif",
+      "pressure": "https://hist-2.msw.ms/gfs/750/20-1521871200-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521882000,
+    "localTimestamp": 1521860400,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 0,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 0.44,
+      "absMaxBreakingHeight": 0.69,
+      "probability": 55,
+      "unit": "ft",
+      "minBreakingHeight": 0,
+      "maxBreakingHeight": 1,
+      "components": {
+        "combined": {
+          "height": 1.7,
+          "period": 3,
+          "direction": 166.87,
+          "compassDirection": "NNW"
+        },
+        "primary": {
+          "height": 0.4,
+          "period": 7,
+          "direction": 335.18,
+          "compassDirection": "SSE"
+        },
+        "secondary": {
+          "height": 0.4,
+          "period": 5,
+          "direction": 260.69,
+          "compassDirection": "E"
+        },
+        "tertiary": {
+          "height": 1.5,
+          "period": 3,
+          "direction": 170.86,
+          "compassDirection": "N"
+        }
+      }
+    },
+    "wind": {
+      "speed": 12,
+      "direction": 158,
+      "compassDirection": "NNW",
+      "chill": -5,
+      "gusts": 18,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1020,
+      "temperature": 1,
+      "weather": "10",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-3.msw.ms/wave/750/20-1521882000-1.gif",
+      "period": "https://hist-3.msw.ms/wave/750/20-1521882000-2.gif",
+      "wind": "https://hist-3.msw.ms/gfs/750/20-1521882000-4.gif",
+      "pressure": "https://hist-3.msw.ms/gfs/750/20-1521882000-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521892800,
+    "localTimestamp": 1521871200,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 0,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 0.46,
+      "absMaxBreakingHeight": 0.71,
+      "probability": 95,
+      "unit": "ft",
+      "minBreakingHeight": 0,
+      "maxBreakingHeight": 1,
+      "components": {
+        "combined": {
+          "height": 1.4,
+          "period": 3,
+          "direction": 161.92,
+          "compassDirection": "NNW"
+        },
+        "primary": {
+          "height": 0.4,
+          "period": 9,
+          "direction": 311.34,
+          "compassDirection": "SE"
+        },
+        "secondary": {
+          "height": 0.3,
+          "period": 5,
+          "direction": 260.12,
+          "compassDirection": "E"
+        },
+        "tertiary": {
+          "height": 1.3,
+          "period": 3,
+          "direction": 168.07,
+          "compassDirection": "NNW"
+        }
+      }
+    },
+    "wind": {
+      "speed": 10,
+      "direction": 145,
+      "compassDirection": "NW",
+      "chill": -5,
+      "gusts": 14,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1022,
+      "temperature": 1,
+      "weather": "1",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-3.msw.ms/wave/750/20-1521892800-1.gif",
+      "period": "https://hist-3.msw.ms/wave/750/20-1521892800-2.gif",
+      "wind": "https://hist-3.msw.ms/gfs/750/20-1521892800-4.gif",
+      "pressure": "https://hist-3.msw.ms/gfs/750/20-1521892800-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521903600,
+    "localTimestamp": 1521882000,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 0,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 0.48,
+      "absMaxBreakingHeight": 0.75,
+      "probability": 95,
+      "unit": "ft",
+      "minBreakingHeight": 0,
+      "maxBreakingHeight": 1,
+      "components": {
+        "combined": {
+          "height": 1.2,
+          "period": 3,
+          "direction": 163.59,
+          "compassDirection": "NNW"
+        },
+        "primary": {
+          "height": 0.4,
+          "period": 9,
+          "direction": 307.4,
+          "compassDirection": "SE"
+        },
+        "secondary": {
+          "height": 0.3,
+          "period": 5,
+          "direction": 259.07,
+          "compassDirection": "E"
+        },
+        "tertiary": {
+          "height": 1,
+          "period": 3,
+          "direction": 171.33,
+          "compassDirection": "N"
+        }
+      }
+    },
+    "wind": {
+      "speed": 9,
+      "direction": 164,
+      "compassDirection": "NNW",
+      "chill": -3,
+      "gusts": 12,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1022,
+      "temperature": 3,
+      "weather": "1",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-4.msw.ms/wave/750/20-1521903600-1.gif",
+      "period": "https://hist-4.msw.ms/wave/750/20-1521903600-2.gif",
+      "wind": "https://hist-4.msw.ms/gfs/750/20-1521903600-4.gif",
+      "pressure": "https://hist-4.msw.ms/gfs/750/20-1521903600-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521914400,
+    "localTimestamp": 1521892800,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 0,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 0.54,
+      "absMaxBreakingHeight": 0.85,
+      "probability": 95,
+      "unit": "ft",
+      "minBreakingHeight": 1,
+      "maxBreakingHeight": 1,
+      "components": {
+        "combined": {
+          "height": 0.9,
+          "period": 9,
+          "direction": 301.83,
+          "compassDirection": "ESE"
+        },
+        "primary": {
+          "height": 0.5,
+          "period": 9,
+          "direction": 310.58,
+          "compassDirection": "SE"
+        },
+        "secondary": {
+          "height": 0.3,
+          "period": 5,
+          "direction": 256.35,
+          "compassDirection": "ENE"
+        },
+        "tertiary": {
+          "height": 0.7,
+          "period": 2,
+          "direction": 180.81,
+          "compassDirection": "N"
+        }
+      }
+    },
+    "wind": {
+      "speed": 6,
+      "direction": 170,
+      "compassDirection": "N",
+      "chill": 1,
+      "gusts": 9,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1020,
+      "temperature": 5,
+      "weather": "1",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-4.msw.ms/wave/750/20-1521914400-1.gif",
+      "period": "https://hist-4.msw.ms/wave/750/20-1521914400-2.gif",
+      "wind": "https://hist-4.msw.ms/gfs/750/20-1521914400-4.gif",
+      "pressure": "https://hist-4.msw.ms/gfs/750/20-1521914400-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521925200,
+    "localTimestamp": 1521903600,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 0,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 0.51,
+      "absMaxBreakingHeight": 0.8,
+      "probability": 95,
+      "unit": "ft",
+      "minBreakingHeight": 1,
+      "maxBreakingHeight": 1,
+      "components": {
+        "combined": {
+          "height": 0.7,
+          "period": 9,
+          "direction": 300.94,
+          "compassDirection": "ESE"
+        },
+        "primary": {
+          "height": 0.4,
+          "period": 9,
+          "direction": 307.76,
+          "compassDirection": "SE"
+        },
+        "secondary": {
+          "height": 0.5,
+          "period": 5,
+          "direction": 223.65,
+          "compassDirection": "NE"
+        }
+      }
+    },
+    "wind": {
+      "speed": 4,
+      "direction": 161,
+      "compassDirection": "NNW",
+      "chill": 2,
+      "gusts": 6,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1020,
+      "temperature": 6,
+      "weather": "20",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-5.msw.ms/wave/750/20-1521925200-1.gif",
+      "period": "https://hist-5.msw.ms/wave/750/20-1521925200-2.gif",
+      "wind": "https://hist-5.msw.ms/gfs/750/20-1521925200-4.gif",
+      "pressure": "https://hist-5.msw.ms/gfs/750/20-1521925200-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521936000,
+    "localTimestamp": 1521914400,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 0,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 0.5,
+      "absMaxBreakingHeight": 0.79,
+      "probability": 86,
+      "unit": "ft",
+      "minBreakingHeight": 1,
+      "maxBreakingHeight": 1,
+      "components": {
+        "combined": {
+          "height": 0.7,
+          "period": 9,
+          "direction": 299.99,
+          "compassDirection": "ESE"
+        },
+        "primary": {
+          "height": 0.4,
+          "period": 9,
+          "direction": 306.8,
+          "compassDirection": "SE"
+        },
+        "secondary": {
+          "height": 0.3,
+          "period": 4,
+          "direction": 253.34,
+          "compassDirection": "ENE"
+        },
+        "tertiary": {
+          "height": 0.4,
+          "period": 2,
+          "direction": 189.21,
+          "compassDirection": "N"
+        }
+      }
+    },
+    "wind": {
+      "speed": 8,
+      "direction": 194,
+      "compassDirection": "NNE",
+      "chill": 1,
+      "gusts": 9,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1021,
+      "temperature": 6,
+      "weather": "19",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-1.msw.ms/wave/750/20-1521936000-1.gif",
+      "period": "https://hist-1.msw.ms/wave/750/20-1521936000-2.gif",
+      "wind": "https://hist-1.msw.ms/gfs/750/20-1521936000-4.gif",
+      "pressure": "https://hist-1.msw.ms/gfs/750/20-1521936000-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521946800,
+    "localTimestamp": 1521925200,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 0,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 0.49,
+      "absMaxBreakingHeight": 0.77,
+      "probability": 86,
+      "unit": "ft",
+      "minBreakingHeight": 0,
+      "maxBreakingHeight": 1,
+      "components": {
+        "combined": {
+          "height": 1,
+          "period": 9,
+          "direction": 298.86,
+          "compassDirection": "ESE"
+        },
+        "primary": {
+          "height": 0.4,
+          "period": 9,
+          "direction": 301.48,
+          "compassDirection": "ESE"
+        },
+        "secondary": {
+          "height": 0.2,
+          "period": 4,
+          "direction": 255.45,
+          "compassDirection": "ENE"
+        },
+        "tertiary": {
+          "height": 0.9,
+          "period": 2,
+          "direction": 205.89,
+          "compassDirection": "NNE"
+        }
+      }
+    },
+    "wind": {
+      "speed": 11,
+      "direction": 200,
+      "compassDirection": "NNE",
+      "chill": -2,
+      "gusts": 14,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1023,
+      "temperature": 5,
+      "weather": "19",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-2.msw.ms/wave/750/20-1521946800-1.gif",
+      "period": "https://hist-2.msw.ms/wave/750/20-1521946800-2.gif",
+      "wind": "https://hist-2.msw.ms/gfs/750/20-1521946800-4.gif",
+      "pressure": "https://hist-2.msw.ms/gfs/750/20-1521946800-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521957600,
+    "localTimestamp": 1521936000,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 0,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 0.45,
+      "absMaxBreakingHeight": 0.7,
+      "probability": 15,
+      "unit": "ft",
+      "minBreakingHeight": 0,
+      "maxBreakingHeight": 1,
+      "components": {
+        "combined": {
+          "height": 1.4,
+          "period": 3,
+          "direction": 219.46,
+          "compassDirection": "NE"
+        },
+        "primary": {
+          "height": 0.4,
+          "period": 9,
+          "direction": 304.18,
+          "compassDirection": "SE"
+        },
+        "secondary": {
+          "height": 1.4,
+          "period": 3,
+          "direction": 212.55,
+          "compassDirection": "NNE"
+        }
+      }
+    },
+    "wind": {
+      "speed": 14,
+      "direction": 197,
+      "compassDirection": "NNE",
+      "chill": -4,
+      "gusts": 18,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1023,
+      "temperature": 3,
+      "weather": "10",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-2.msw.ms/wave/750/20-1521957600-1.gif",
+      "period": "https://hist-2.msw.ms/wave/750/20-1521957600-2.gif",
+      "wind": "https://hist-2.msw.ms/gfs/750/20-1521957600-4.gif",
+      "pressure": "https://hist-2.msw.ms/gfs/750/20-1521957600-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521968400,
+    "localTimestamp": 1521946800,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 0,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 0.44,
+      "absMaxBreakingHeight": 0.69,
+      "probability": 15,
+      "unit": "ft",
+      "minBreakingHeight": 0,
+      "maxBreakingHeight": 1,
+      "components": {
+        "combined": {
+          "height": 1.8,
+          "period": 3,
+          "direction": 217.73,
+          "compassDirection": "NE"
+        },
+        "primary": {
+          "height": 0.4,
+          "period": 9,
+          "direction": 302.54,
+          "compassDirection": "ESE"
+        },
+        "secondary": {
+          "height": 1.7,
+          "period": 3,
+          "direction": 212.58,
+          "compassDirection": "NNE"
+        }
+      }
+    },
+    "wind": {
+      "speed": 15,
+      "direction": 192,
+      "compassDirection": "NNE",
+      "chill": -6,
+      "gusts": 20,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1024,
+      "temperature": 1,
+      "weather": "10",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-3.msw.ms/wave/750/20-1521968400-1.gif",
+      "period": "https://hist-3.msw.ms/wave/750/20-1521968400-2.gif",
+      "wind": "https://hist-3.msw.ms/gfs/750/20-1521968400-4.gif",
+      "pressure": "https://hist-3.msw.ms/gfs/750/20-1521968400-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521979200,
+    "localTimestamp": 1521957600,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 0,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 0.44,
+      "absMaxBreakingHeight": 0.68,
+      "probability": 76,
+      "unit": "ft",
+      "minBreakingHeight": 0,
+      "maxBreakingHeight": 1,
+      "components": {
+        "combined": {
+          "height": 2,
+          "period": 4,
+          "direction": 231.68,
+          "compassDirection": "NE"
+        },
+        "primary": {
+          "height": 0.4,
+          "period": 9,
+          "direction": 301.1,
+          "compassDirection": "ESE"
+        },
+        "secondary": {
+          "height": 2,
+          "period": 4,
+          "direction": 220.23,
+          "compassDirection": "NE"
+        }
+      }
+    },
+    "wind": {
+      "speed": 16,
+      "direction": 199,
+      "compassDirection": "NNE",
+      "chill": -7,
+      "gusts": 21,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1027,
+      "temperature": 0,
+      "weather": "1",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-3.msw.ms/wave/750/20-1521979200-1.gif",
+      "period": "https://hist-3.msw.ms/wave/750/20-1521979200-2.gif",
+      "wind": "https://hist-3.msw.ms/gfs/750/20-1521979200-4.gif",
+      "pressure": "https://hist-3.msw.ms/gfs/750/20-1521979200-3.gif"
+    }
+  },
+  {
+    "timestamp": 1521990000,
+    "localTimestamp": 1521968400,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 0,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 0.47,
+      "absMaxBreakingHeight": 0.74,
+      "probability": 76,
+      "unit": "ft",
+      "minBreakingHeight": 0,
+      "maxBreakingHeight": 1,
+      "components": {
+        "combined": {
+          "height": 3,
+          "period": 4,
+          "direction": 252.83,
+          "compassDirection": "ENE"
+        },
+        "primary": {
+          "height": 3,
+          "period": 4,
+          "direction": 235.4,
+          "compassDirection": "NE"
+        },
+        "secondary": {
+          "height": 0.3,
+          "period": 9,
+          "direction": 298.45,
+          "compassDirection": "ESE"
+        }
+      }
+    },
+    "wind": {
+      "speed": 18,
+      "direction": 211,
+      "compassDirection": "NNE",
+      "chill": -5,
+      "gusts": 24,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1029,
+      "temperature": 3,
+      "weather": "1",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-4.msw.ms/wave/750/20-1521990000-1.gif",
+      "period": "https://hist-4.msw.ms/wave/750/20-1521990000-2.gif",
+      "wind": "https://hist-4.msw.ms/gfs/750/20-1521990000-4.gif",
+      "pressure": "https://hist-4.msw.ms/gfs/750/20-1521990000-3.gif"
+    }
+  },
+  {
+    "timestamp": 1522000800,
+    "localTimestamp": 1521979200,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 0,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 1.21,
+      "absMaxBreakingHeight": 1.89,
+      "probability": 81,
+      "unit": "ft",
+      "minBreakingHeight": 1,
+      "maxBreakingHeight": 2,
+      "components": {
+        "combined": {
+          "height": 3.5,
+          "period": 5,
+          "direction": 261.61,
+          "compassDirection": "E"
+        },
+        "primary": {
+          "height": 3.5,
+          "period": 5,
+          "direction": 253.51,
+          "compassDirection": "ENE"
+        }
+      }
+    },
+    "wind": {
+      "speed": 17,
+      "direction": 244,
+      "compassDirection": "ENE",
+      "chill": -3,
+      "gusts": 20,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1030,
+      "temperature": 5,
+      "weather": "1",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-4.msw.ms/wave/750/20-1522000800-1.gif",
+      "period": "https://hist-4.msw.ms/wave/750/20-1522000800-2.gif",
+      "wind": "https://hist-4.msw.ms/gfs/750/20-1522000800-4.gif",
+      "pressure": "https://hist-4.msw.ms/gfs/750/20-1522000800-3.gif"
+    }
+  },
+  {
+    "timestamp": 1522011600,
+    "localTimestamp": 1521990000,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 1,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 1.69,
+      "absMaxBreakingHeight": 2.64,
+      "probability": 81,
+      "unit": "ft",
+      "minBreakingHeight": 2,
+      "maxBreakingHeight": 3,
+      "components": {
+        "combined": {
+          "height": 4,
+          "period": 6,
+          "direction": 270.49,
+          "compassDirection": "E"
+        },
+        "primary": {
+          "height": 4,
+          "period": 6,
+          "direction": 262.53,
+          "compassDirection": "E"
+        }
+      }
+    },
+    "wind": {
+      "speed": 14,
+      "direction": 249,
+      "compassDirection": "ENE",
+      "chill": -2,
+      "gusts": 17,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1032,
+      "temperature": 5,
+      "weather": "1",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-5.msw.ms/wave/750/20-1522011600-1.gif",
+      "period": "https://hist-5.msw.ms/wave/750/20-1522011600-2.gif",
+      "wind": "https://hist-5.msw.ms/gfs/750/20-1522011600-4.gif",
+      "pressure": "https://hist-5.msw.ms/gfs/750/20-1522011600-3.gif"
+    }
+  },
+  {
+    "timestamp": 1522022400,
+    "localTimestamp": 1522000800,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 1,
+    "solidRating": 0,
+    "swell": {
+      "absMinBreakingHeight": 2.04,
+      "absMaxBreakingHeight": 3.19,
+      "probability": 25,
+      "unit": "ft",
+      "minBreakingHeight": 2,
+      "maxBreakingHeight": 3,
+      "components": {
+        "combined": {
+          "height": 4.5,
+          "period": 7,
+          "direction": 274.69,
+          "compassDirection": "E"
+        },
+        "primary": {
+          "height": 4.5,
+          "period": 7,
+          "direction": 267.37,
+          "compassDirection": "E"
+        }
+      }
+    },
+    "wind": {
+      "speed": 17,
+      "direction": 244,
+      "compassDirection": "ENE",
+      "chill": -4,
+      "gusts": 20,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1035,
+      "temperature": 4,
+      "weather": "10",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-1.msw.ms/wave/750/20-1522022400-1.gif",
+      "period": "https://hist-1.msw.ms/wave/750/20-1522022400-2.gif",
+      "wind": "https://hist-1.msw.ms/gfs/750/20-1522022400-4.gif",
+      "pressure": "https://hist-1.msw.ms/gfs/750/20-1522022400-3.gif"
+    }
+  },
+  {
+    "timestamp": 1522033200,
+    "localTimestamp": 1522011600,
+    "issueTimestamp": 1521655200,
+    "fadedRating": 0,
+    "solidRating": 1,
+    "swell": {
+      "absMinBreakingHeight": 2.36,
+      "absMaxBreakingHeight": 3.68,
+      "probability": 25,
+      "unit": "ft",
+      "minBreakingHeight": 2,
+      "maxBreakingHeight": 4,
+      "components": {
+        "combined": {
+          "height": 5,
+          "period": 7,
+          "direction": 274.84,
+          "compassDirection": "E"
+        },
+        "primary": {
+          "height": 5,
+          "period": 7,
+          "direction": 268.85,
+          "compassDirection": "E"
+        }
+      }
+    },
+    "wind": {
+      "speed": 15,
+      "direction": 238,
+      "compassDirection": "ENE",
+      "chill": -4,
+      "gusts": 20,
+      "unit": "mph"
+    },
+    "condition": {
+      "pressure": 1037,
+      "temperature": 3,
+      "weather": "10",
+      "unitPressure": "mb",
+      "unit": "c"
+    },
+    "charts": {
+      "swell": "https://hist-2.msw.ms/wave/750/20-1522033200-1.gif",
+      "period": "https://hist-2.msw.ms/wave/750/20-1522033200-2.gif",
+      "wind": "https://hist-2.msw.ms/gfs/750/20-1522033200-4.gif",
+      "pressure": "https://hist-2.msw.ms/gfs/750/20-1522033200-3.gif"
+    }
+  }
+]
