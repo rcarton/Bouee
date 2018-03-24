@@ -62,7 +62,7 @@ class BoueeWidgetProvider() : AppWidgetProvider() {
   }
 
   private fun createRenderedBitmap(context: Context?, forecasts: ForecastResponse): Bitmap {
-    val bitmap = Bitmap.createBitmap(500, 100, Bitmap.Config.ARGB_8888)
+    val bitmap = Bitmap.createBitmap(1080, 1080/5, Bitmap.Config.ARGB_8888)
     val canvas = Canvas(bitmap)
 
     val drawable = DrawableWidget(forecasts)

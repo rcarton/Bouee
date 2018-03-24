@@ -3,9 +3,9 @@
     android:id="@+id/bouee"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#55000000"
     android:baselineAligned="false"
     android:padding="@dimen/widget_margin">
+    <!--android:background="#55000000"-->
 
     <ImageView android:id="@+id/canvas"
         android:layout_width="match_parent"
@@ -13,5 +13,6 @@
         android:layout_alignParentLeft="true"
         android:scaleType="fitStart"
         />
+    <!--android:background="@color/colorWhite"-->
 
 </RelativeLayout>
