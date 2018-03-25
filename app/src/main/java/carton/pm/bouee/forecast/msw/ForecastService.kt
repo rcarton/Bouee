@@ -1,18 +1,35 @@
 package carton.pm.bouee.forecast.msw
 
+import android.util.Log
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule
+import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
+import com.fasterxml.jackson.module.kotlin.readValue
+import com.google.api.client.http.GenericUrl
 import com.google.api.client.http.javanet.NetHttpTransport
 
 val HTTP_TRANSPORT = NetHttpTransport()
-val JSON_FACTORY = JacksonFactory()
-val FORECAST_URL = "http://magicseaweed.com/api/${apiKey}/forecast/?spot_id=466"
 
-class ForecastService {
+class ForecastService(private val forecastConfig: ForecastConfig) {
 
-  fun getForecasts(spotId: Int): ForecastResponse {
+  private val objectMapper = jacksonObjectMapper()
 
+  init {
+    objectMapper.registerModule(JavaTimeModule())
   }
 
-  fun getForecastUrl(spotId: Int): {
+  fun getForecasts(spotId: Int): ForecastResponse {
+    Log.d("ForecastService", "Loading forecast for spot=$spotId")
 
+    // Get the forecast
+    val spotUrl = "http://magicseaweed.com/api/${forecastConfig.apiKey}/forecast/?spot_id=$spotId"
+
+    val requestFactory = HTTP_TRANSPORT.createRequestFactory()
+    val request = requestFactory.buildGetRequest(GenericUrl(spotUrl))
+    val forecastJson = request.execute().parseAsString()
+
+    Log.d("ForecastService", "Forecast loaded.")
+
+    // Deserialize
+    return objectMapper.readValue(forecastJson)
   }
 }

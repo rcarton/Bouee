@@ -6,11 +6,12 @@ import carton.pm.bouee.forecast.getLocalDayOfForecast
 import carton.pm.bouee.forecast.getNumberOfDaysInForecast
 import carton.pm.bouee.forecast.msw.Forecast
 import java.lang.Float.min
+import java.time.Instant
 import java.time.LocalDate
 
 // STYLE
-//const val PADDING_BETWEEN_DAYS = .005f
 const val PADDING_BETWEEN_DAYS = 0f
+const val STATUS_BAR_HEIGHT = 38
 const val MAX_WAVE_HEIGHT_FT = 10f
 
 class DrawableWidget(private val forecasts: Array<Forecast>): Drawable() {
@@ -20,7 +21,6 @@ class DrawableWidget(private val forecasts: Array<Forecast>): Drawable() {
   init {
     barPaint.isAntiAlias = true
     barPaint.style = Paint.Style.FILL
-//    barPaint.color = Color.CYAN
     barPaint.color = Color.parseColor("#3cbbe8")
   }
   override fun getOpacity(): Int {
@@ -40,10 +40,21 @@ class DrawableWidget(private val forecasts: Array<Forecast>): Drawable() {
       return
     }
 
-    val height = canvas.height.toFloat()
+    // Will be used to display previous forecasts differently
+    val now = Instant.now()
+
+    // Save
+    val height = canvas.height.toFloat() - STATUS_BAR_HEIGHT - 5
     val width = canvas.width.toFloat()
 
     val numberOfDaysInForecast = getNumberOfDaysInForecast(forecasts)
+
+    // Draw the status bar
+    val statusBarPaint = Paint()
+    statusBarPaint.isAntiAlias = true
+    statusBarPaint.color = Color.parseColor("#88000000")
+    statusBarPaint.textSize = STATUS_BAR_HEIGHT.toFloat()
+    canvas.drawText("Far Rockaway ${Instant.now()}", 0f, canvas.height.toFloat() - 5 , statusBarPaint)
 
     // Draw the grid
     val grid = Grid(width, height, MAX_WAVE_HEIGHT_FT)
@@ -70,6 +81,7 @@ class DrawableWidget(private val forecasts: Array<Forecast>): Drawable() {
       val swellHeight = forecast.swell.components.combined.height
       val waveBarHeight = min(swellHeight, MAX_WAVE_HEIGHT_FT)/MAX_WAVE_HEIGHT_FT * barHeight
       println("barIndex=$i posLeft=$posLeft swellHeight=$swellHeight waveHeight=$waveBarHeight barWidth=$barWidth")
+
 
       // TODO: different color for the weekend?
       println(RectF(posLeft, height-waveBarHeight, posLeft+barWidth, height))
