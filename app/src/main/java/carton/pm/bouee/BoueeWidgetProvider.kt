@@ -3,14 +3,19 @@ package carton.pm.bouee
 import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider
 import android.content.Context
+import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.os.AsyncTask
+import android.os.Handler
+import android.os.Message
+import android.os.Messenger
 import android.util.Log
 import android.view.View.GONE
 import android.view.View.VISIBLE
 import android.widget.RemoteViews
 import carton.pm.bouee.drawables.DrawableWidget
+import carton.pm.bouee.forecast.ForecastIntentService
 import carton.pm.bouee.forecast.msw.ForecastConfig
 import carton.pm.bouee.forecast.msw.ForecastResponse
 import carton.pm.bouee.forecast.msw.ForecastService
@@ -29,10 +34,26 @@ class BoueeWidgetProvider() : AppWidgetProvider() {
     appWidgetIds.forEach { widgetId ->
       println("Widget id=$widgetId")
 
+
+      val handler = object: Handler() {
+        override fun handleMessage(msg: Message) {
+          val reply = msg.data.getString("forecast")
+
+          Log.d(BoueeWidgetProvider::class.toString(), "Handler received data $reply")
+        }
+      }
+
+      val intent = Intent(context, ForecastIntentService::class.java)
+      intent.putExtra("messenger", Messenger(handler))
+
+      // Start the IntentService
+      context.startService(intent)
+
       // Retrieve the forecast and render
-      RetrieveForecast(widgetId, context, appWidgetManager).execute(384)
+//      RetrieveForecast(widgetId, context, appWidgetManager).execute(384)
     }
   }
+
 
   private fun createRenderedBitmap(forecasts: ForecastResponse): Bitmap {
     Log.d(BoueeWidgetProvider::class.toString(), "Creating forecast bitmap")

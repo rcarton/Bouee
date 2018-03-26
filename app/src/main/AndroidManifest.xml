@@ -16,5 +16,7 @@
             <meta-data android:name="android.appwidget.provider"
                 android:resource="@xml/bouee_info" />
         </receiver>
+        <service android:name=".forecast.ForecastIntentService"
+            android:exported="false" />
     </application>
 </manifest>
