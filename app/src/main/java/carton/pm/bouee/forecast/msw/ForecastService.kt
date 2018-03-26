@@ -30,6 +30,10 @@ class ForecastService(private val forecastConfig: ForecastConfig) {
     Log.d("ForecastService", "Forecast loaded.")
 
     // Deserialize
-    return objectMapper.readValue(forecastJson)
+    val forecastResponse: ForecastResponse = objectMapper.readValue(forecastJson)
+
+    Log.d("ForecastService", "Forecast response deserialized")
+
+    return forecastResponse
   }
 }

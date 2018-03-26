@@ -18,16 +18,6 @@ import carton.pm.bouee.forecast.msw.ForecastService
 
 class BoueeWidgetProvider() : AppWidgetProvider() {
 
-//  override fun onEnabled(context: Context) {
-//    super.onEnabled(context)
-//    Log.d(BoueeWidgetProvider::class.toString(), "onEnabled")
-//
-//    val appWidgetManager = AppWidgetManager.getInstance(context)
-//    val appWidgetIds = appWidgetManager.getAppWidgetIds(ComponentName(context, BoueeWidgetProvider::class.java))
-//
-//    onUpdate(context, appWidgetManager, appWidgetIds)
-//  }
-
   override fun onUpdate(context: Context, appWidgetManager: AppWidgetManager,
                         appWidgetIds: IntArray) {
     super.onUpdate(context, appWidgetManager, appWidgetIds)
@@ -45,6 +35,7 @@ class BoueeWidgetProvider() : AppWidgetProvider() {
   }
 
   private fun createRenderedBitmap(forecasts: ForecastResponse): Bitmap {
+    Log.d(BoueeWidgetProvider::class.toString(), "Creating forecast bitmap")
     val bitmap = Bitmap.createBitmap(1080, 1080/5, Bitmap.Config.ARGB_8888)
     val canvas = Canvas(bitmap)
 
@@ -75,7 +66,7 @@ class BoueeWidgetProvider() : AppWidgetProvider() {
 
       // Handle errors
       if (this.exception != null) {
-        Log.e("BoueeWidgetProvider", this.exception.toString())
+        Log.e(BoueeWidgetProvider::class.toString(), this.exception.toString())
         widget.setTextViewText(R.id.placeholder, context.getString(R.string.error))
         widget.setViewVisibility(R.id.placeholder, VISIBLE)
       } else {
@@ -86,6 +77,7 @@ class BoueeWidgetProvider() : AppWidgetProvider() {
         widget.setImageViewBitmap(R.id.canvas, createRenderedBitmap(result))
       }
 
+      Log.d(BoueeWidgetProvider::class.toString(), "Updating widget.")
       appWidgetManager.updateAppWidget(widgetId, widget)
     }
 

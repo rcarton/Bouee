@@ -80,11 +80,12 @@ class DrawableWidget(private val forecasts: Array<Forecast>): Drawable() {
 
       val swellHeight = forecast.swell.components.combined.height
       val waveBarHeight = min(swellHeight, MAX_WAVE_HEIGHT_FT)/MAX_WAVE_HEIGHT_FT * barHeight
-      println("barIndex=$i posLeft=$posLeft swellHeight=$swellHeight waveHeight=$waveBarHeight barWidth=$barWidth")
+
+//      println("barIndex=$i posLeft=$posLeft swellHeight=$swellHeight waveHeight=$waveBarHeight barWidth=$barWidth")
 
 
       // TODO: different color for the weekend?
-      println(RectF(posLeft, height-waveBarHeight, posLeft+barWidth, height))
+//      println(RectF(posLeft, height-waveBarHeight, posLeft+barWidth, height))
       canvas.drawRect(RectF(posLeft, height-waveBarHeight, posLeft+barWidth+1f, height), barPaint)
       posLeft += barWidth
     }
