@@ -1,31 +1,52 @@
 package carton.pm.bouee.forecast
 
-import android.app.IntentService
+import android.appwidget.AppWidgetManager
+import android.content.Context
 import android.content.Intent
-import android.os.Bundle
-import android.os.Message
-import android.os.Messenger
-import android.os.RemoteException
+import android.support.v4.app.JobIntentService
 import android.util.Log
+import carton.pm.bouee.R
+import carton.pm.bouee.forecast.msw.ForecastConfig
+import carton.pm.bouee.forecast.msw.ForecastService
 
+const val ACTION_FORECAST_LOADED = "carton.pm.bouee.action.FORECAST_LOADED"
 
-class ForecastIntentService: IntentService("ForecastIntentService") {
-  override fun onHandleIntent(intent: Intent) {
-    val bundle = intent.extras
-    if (bundle != null) {
-      val messenger = bundle.get("messenger") as Messenger
-      val msg = Message.obtain()
-      val bundle = Bundle()
-      bundle.putString("forecast", "hello")
-      msg.data = bundle
+const val EXTRA_FORECAST_PAYLOAD_ID = "forecastLoaded"
+const val EXTRA_FORECAST_SPOT_ID = "forecastSpotId"
 
-      try {
-        messenger.send(msg)
-      } catch (e: RemoteException) {
-        Log.e(ForecastIntentService::class.toString(), "error")
-      }
+const val JOB_ID = 1000
+var forecastService: ForecastService? = null
 
-    }
-    Log.d(ForecastIntentService()::class.toString(), "IntentService onHandleIntent")
+fun enqueueWork(context: Context, work: Intent) {
+  Log.d(ForecastIntentService::class.toString(), "static enqueueWork")
+
+  // That's nasty.
+  if (forecastService == null) {
+    val forecastConfig = ForecastConfig(apiKey = context.getString(R.string.msw_key))
+    forecastService = ForecastService(forecastConfig)
+  }
+
+  JobIntentService.enqueueWork(context, ForecastIntentService::class.java, 1000, work)
+}
+
+class ForecastIntentService: JobIntentService() {
+
+  override fun onHandleWork(intent: Intent) {
+    val widgetId = intent.extras.getInt(AppWidgetManager.EXTRA_APPWIDGET_ID)
+    val spotId = intent.getIntExtra(EXTRA_FORECAST_SPOT_ID, 384)
+
+    Log.d(ForecastIntentService()::class.toString(), "IntentService onHandleIntent widgetId=$widgetId spotId=$spotId")
+
+    val payload = forecastService!!.getForecastsAsString(spotId)
+
+    val forecastLoadedIntent = Intent()
+    forecastLoadedIntent.putExtra(EXTRA_FORECAST_PAYLOAD_ID, payload)
+    forecastLoadedIntent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, widgetId)
+    forecastLoadedIntent.action = "android.appwidget.action.APPWIDGET_UPDATE"
+
+    // TODO draw bitmap and store in the app storage as a png for that spot
+    // then this could be used instead of loading
+
+    sendBroadcast(forecastLoadedIntent);
   }
 }

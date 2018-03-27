@@ -36,4 +36,19 @@ class ForecastService(private val forecastConfig: ForecastConfig) {
 
     return forecastResponse
   }
+
+  fun getForecastsAsString(spotId: Int): String {
+    Log.d("ForecastService", "Loading forecast for spot=$spotId")
+
+    // Get the forecast
+    val spotUrl = "http://magicseaweed.com/api/${forecastConfig.apiKey}/forecast/?spot_id=$spotId"
+
+    val requestFactory = HTTP_TRANSPORT.createRequestFactory()
+    val request = requestFactory.buildGetRequest(GenericUrl(spotUrl))
+    val forecastJson = request.execute().parseAsString()
+
+    Log.d("ForecastService", "Forecast loaded.")
+
+    return forecastJson
+  }
 }

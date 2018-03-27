@@ -1,5 +1,6 @@
 package carton.pm.bouee
 
+import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider
 import android.content.Context
@@ -7,26 +8,37 @@ import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.os.AsyncTask
-import android.os.Handler
-import android.os.Message
-import android.os.Messenger
 import android.util.Log
 import android.view.View.GONE
 import android.view.View.VISIBLE
 import android.widget.RemoteViews
 import carton.pm.bouee.drawables.DrawableWidget
-import carton.pm.bouee.forecast.ForecastIntentService
+import carton.pm.bouee.forecast.EXTRA_FORECAST_PAYLOAD_ID
+import carton.pm.bouee.forecast.EXTRA_FORECAST_SPOT_ID
+import carton.pm.bouee.forecast.ForecastReceiver
 import carton.pm.bouee.forecast.msw.ForecastConfig
 import carton.pm.bouee.forecast.msw.ForecastResponse
 import carton.pm.bouee.forecast.msw.ForecastService
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule
+import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 
 
 class BoueeWidgetProvider() : AppWidgetProvider() {
+  private val objectMapper = jacksonObjectMapper()
+
+  init {
+    objectMapper.registerModule(JavaTimeModule())
+  }
 
   override fun onUpdate(context: Context, appWidgetManager: AppWidgetManager,
                         appWidgetIds: IntArray) {
     super.onUpdate(context, appWidgetManager, appWidgetIds)
     Log.d(BoueeWidgetProvider::class.toString(), "onUpdate")
+
+    // TODO remove me
+//    val filter = IntentFilter()
+//    filter.addAction("TEST_BOOP")
+//    context.applicationContext.registerReceiver(forecastReceiver, filter)
 
     println("Widgets found=${appWidgetIds.size}")
 
@@ -34,26 +46,55 @@ class BoueeWidgetProvider() : AppWidgetProvider() {
     appWidgetIds.forEach { widgetId ->
       println("Widget id=$widgetId")
 
+      val intent = Intent(context, ForecastReceiver::class.java)
+      intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, widgetId)
+      intent.putExtra(EXTRA_FORECAST_SPOT_ID, 384)
 
-      val handler = object: Handler() {
-        override fun handleMessage(msg: Message) {
-          val reply = msg.data.getString("forecast")
+      val widget = RemoteViews(context.packageName, R.layout.bouee)
 
-          Log.d(BoueeWidgetProvider::class.toString(), "Handler received data $reply")
-        }
-      }
+      // Show Loading
+      widget.setTextViewText(R.id.placeholder, context.getString(R.string.loading))
+      widget.setViewVisibility(R.id.placeholder, VISIBLE)
 
-      val intent = Intent(context, ForecastIntentService::class.java)
-      intent.putExtra("messenger", Messenger(handler))
+      val confirm = PendingIntent.getBroadcast(context, 1000, intent, PendingIntent.FLAG_UPDATE_CURRENT)
+      confirm.send()
 
-      // Start the IntentService
-      context.startService(intent)
-
+//      context.sendBroadcast(intent)
       // Retrieve the forecast and render
 //      RetrieveForecast(widgetId, context, appWidgetManager).execute(384)
     }
   }
 
+  override fun onReceive(context: Context, intent: Intent) {
+    // If this never gets called, try creating a separate receiver instead.
+    super.onReceive(context, intent)
+    Log.d(BoueeWidgetProvider::class.toString(), "BoueeWidgetProvider.onReceive action=${intent.action}")
+
+    // Yeah this is a rogue update.
+    val action = intent.action
+    if (AppWidgetManager.ACTION_APPWIDGET_UPDATE == action) {
+      val widgetId = intent.getIntExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, -1)
+      val payload: String? = intent.getStringExtra(EXTRA_FORECAST_PAYLOAD_ID)
+      payload ?: return
+
+      Log.i(BoueeWidgetProvider::class.toString(), "widgetId=${widgetId} payload=$payload")
+
+      // Deserialize the payload
+      val result: ForecastResponse = objectMapper.readValue(payload, ForecastResponse::class.java)
+
+      // Update this widget only
+      val widget = RemoteViews(context.packageName, R.layout.bouee)
+
+      // Hide Loading, show status bar
+      widget.setViewVisibility(R.id.placeholder, GONE)
+
+      // Render the chart
+      widget.setImageViewBitmap(R.id.canvas, createRenderedBitmap(result))
+
+      Log.d(BoueeWidgetProvider::class.toString(), "Updating widget.")
+      AppWidgetManager.getInstance(context).updateAppWidget(widgetId, widget)
+    }
+  }
 
   private fun createRenderedBitmap(forecasts: ForecastResponse): Bitmap {
     Log.d(BoueeWidgetProvider::class.toString(), "Creating forecast bitmap")
