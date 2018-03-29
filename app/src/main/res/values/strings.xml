@@ -2,4 +2,15 @@
     <string name="app_name">Bouee</string>
     <string name="loading">Loading</string>
     <string name="error">ERROR</string>
+
+    <!--Default values-->
+    <string name="DEFAULT_SPOT_ID">384</string>
+    <string name="DEFAULT_SPOT_NAME">Rockaway</string>
+
+    <!-- Configuration screen -->
+    <string name="config_header_spot">Spot</string>
+    <string name="config_spot_id">Id</string>
+    <string name="config_spot_name">Name</string>
+    <string name="config_button_cancel">Cancel</string>
+    <string name="config_button_ok">OK</string>
 </resources>

@@ -14,9 +14,10 @@ const val PADDING_BETWEEN_DAYS = 0f
 const val STATUS_BAR_HEIGHT = 38
 const val MAX_WAVE_HEIGHT_FT = 10f
 
-class DrawableWidget(private val forecasts: Array<Forecast>): Drawable() {
+class DrawableWidget(private val forecasts: Array<Forecast>, spotName: String): Drawable() {
 
   private val barPaint = Paint()
+  private val spotName = spotName
 
   init {
     barPaint.isAntiAlias = true
@@ -40,9 +41,6 @@ class DrawableWidget(private val forecasts: Array<Forecast>): Drawable() {
       return
     }
 
-    // Will be used to display previous forecasts differently
-    val now = Instant.now()
-
     // Save
     val height = canvas.height.toFloat() - STATUS_BAR_HEIGHT - 5
     val width = canvas.width.toFloat()
@@ -54,7 +52,7 @@ class DrawableWidget(private val forecasts: Array<Forecast>): Drawable() {
     statusBarPaint.isAntiAlias = true
     statusBarPaint.color = Color.parseColor("#88000000")
     statusBarPaint.textSize = STATUS_BAR_HEIGHT.toFloat()
-    canvas.drawText("Far Rockaway ${Instant.now()}", 0f, canvas.height.toFloat() - 5 , statusBarPaint)
+    canvas.drawText("$spotName ${Instant.now()}", 0f, canvas.height.toFloat() - 5 , statusBarPaint)
 
     // Draw the grid
     val grid = Grid(width, height, MAX_WAVE_HEIGHT_FT)
