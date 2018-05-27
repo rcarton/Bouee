@@ -6,8 +6,8 @@ import android.content.Intent
 import android.support.v4.app.JobIntentService
 import android.util.Log
 import carton.pm.bouee.R
-import carton.pm.bouee.forecast.msw.ForecastConfig
-import carton.pm.bouee.forecast.msw.ForecastService
+import carton.pm.bouee.forecast.quickswell.ForecastConfig
+import carton.pm.bouee.forecast.quickswell.ForecastService
 
 const val ACTION_FORECAST_LOADED = "carton.pm.bouee.action.FORECAST_LOADED"
 
@@ -30,7 +30,7 @@ class ForecastIntentService: JobIntentService() {
     val spotName = intent.getStringExtra(EXTRA_FORECAST_SPOT_NAME)
 
     // TODO move this out
-    val forecastConfig = ForecastConfig(apiKey = baseContext.getString(R.string.msw_key))
+    val forecastConfig = ForecastConfig(baseUrl = baseContext.getString(R.string.qs_base_url))
     val forecastService = ForecastService(forecastConfig)
 
     Log.d(ForecastIntentService()::class.toString(), "IntentService onHandleIntent widgetId=$widgetId spotId=$spotId")

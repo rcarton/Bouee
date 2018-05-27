@@ -22,7 +22,8 @@ data class WidgetConfig(
     val colorDarkGrey: Int = Color.parseColor("#88000000"),
 
     // ---- Swell ----
-    val swellMaxHeightFeet: Float = 10f, // Maximum swell height in feet
+    val swellUnit: LengthUnit = LengthUnit.FOOT,
+    val swellMaxHeight: Float = 10f, // Maximum swell height in feet
     val swellPaint: Paint = Paint().apply {
       isAntiAlias = true
       style = Paint.Style.FILL

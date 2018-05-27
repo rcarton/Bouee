@@ -12,33 +12,30 @@ class ForecastUtilTest(): AbstractForecastTest() {
   @Test
   fun getNumberOfDaysInForecast_ok() {
     // By default it's 40 Forecast objects 3 hours apart, so it's 5 days
-    assertEquals(5, getNumberOfDaysInForecast(forecasts))
+    assertEquals(5, getNumberOfDaysInForecast(forecastResponse))
   }
 
   @Test
   fun getLocalDayOfForecast_differentDays() {
+    val forecasts = forecastResponse.forecasts
     // That's a Saturday
     val ts = Instant.from(ZonedDateTime.of(1985, 5, 25, 2, 0, 0, 0, ZoneId.of("GMT")))
 
-    // This should be a Friday
-    val localTs = Instant.from(ZonedDateTime.of(1985, 5, 24, 22, 0, 0, 0, ZoneId.of("GMT")))
-
-    val forecast = forecasts[0].copy(timestamp = ts, localTimestamp = localTs)
-    val localDay = getLocalDayOfForecast(forecast)
+    val forecast = forecasts[0].copy(timestamp = ts)
+    val localDay = getLocalDayOfForecast(forecast, forecastResponse.copy(utcOffsetMinutes = -240).utcOffsetMinutes)
 
     assertEquals(DayOfWeek.FRIDAY, localDay.dayOfWeek)
   }
 
   @Test
   fun getLocalDayOfForecast_sameDay() {
+    val forecasts = forecastResponse.forecasts
+
     // That's a Saturday
     val ts = Instant.from(ZonedDateTime.of(1985, 5, 25, 2, 0, 0, 0, ZoneId.of("GMT")))
 
-    // Same day
-    val localTs = Instant.from(ZonedDateTime.of(1985, 5, 25, 1, 0, 0, 0, ZoneId.of("GMT")))
-
-    val forecast = forecasts[0].copy(timestamp = ts, localTimestamp = localTs)
-    val localDay = getLocalDayOfForecast(forecast)
+    val forecast = forecasts[0].copy(timestamp = ts)
+    val localDay = getLocalDayOfForecast(forecast, forecastResponse.copy(utcOffsetMinutes = -240).utcOffsetMinutes)
 
     assertEquals(DayOfWeek.SATURDAY, localDay.dayOfWeek)
   }

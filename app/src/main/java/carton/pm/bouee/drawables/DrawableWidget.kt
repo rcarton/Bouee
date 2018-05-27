@@ -4,7 +4,7 @@ import android.graphics.*
 import android.graphics.drawable.Drawable
 import carton.pm.bouee.forecast.getLocalDayOfForecast
 import carton.pm.bouee.forecast.getNumberOfDaysInForecast
-import carton.pm.bouee.forecast.msw.Forecast
+import carton.pm.bouee.forecast.quickswell.ForecastResponse
 import java.lang.Float.min
 import java.time.Instant
 import java.time.LocalDate
@@ -15,7 +15,7 @@ const val MAX_WAVE_HEIGHT_FT = 10f
 
 const val TAG = "DrawableWidget"
 
-class DrawableWidget(private val forecasts: Array<Forecast>,
+class DrawableWidget(private val forecastResponse: ForecastResponse,
                      private val config: WidgetConfig) : Drawable() {
 
   private val barPaint = Paint()
@@ -38,6 +38,7 @@ class DrawableWidget(private val forecasts: Array<Forecast>,
   }
 
   override fun draw(canvas: Canvas) {
+    val forecasts = forecastResponse.forecasts
     if (forecasts.isEmpty()) {
       return
     }
@@ -46,7 +47,7 @@ class DrawableWidget(private val forecasts: Array<Forecast>,
     val gridHeight = config.height.toFloat() - STATUS_BAR_HEIGHT - 5
     val gridWidth = config.width.toFloat()
 
-    val numberOfDaysInForecast = getNumberOfDaysInForecast(forecasts)
+    val numberOfDaysInForecast = getNumberOfDaysInForecast(forecastResponse)
 
     // Draw the status bar
     val statusBarPaint = Paint()
@@ -56,7 +57,7 @@ class DrawableWidget(private val forecasts: Array<Forecast>,
     canvas.drawText("${config.spotName} ${Instant.now()}", 0f, config.height.toFloat() - 5 , statusBarPaint)
 
     // Draw the grid
-    val grid = Grid(gridWidth, gridHeight, config.swellMaxHeightFeet)
+    val grid = Grid(gridWidth, gridHeight, config.swellMaxHeight)
     grid.draw(canvas)
 
     // Days
@@ -67,11 +68,11 @@ class DrawableWidget(private val forecasts: Array<Forecast>,
     val barWidth = gridWidth / forecasts.size
     val barHeight = gridHeight
 
-    var lastDay: LocalDate = getLocalDayOfForecast(forecasts[0])
+    var lastDay: LocalDate = getLocalDayOfForecast(forecasts[0], forecastResponse.utcOffsetMinutes)
     var posLeft = 0f
 
     forecasts.forEachIndexed { i, forecast ->
-      val currentDay = getLocalDayOfForecast(forecast)
+      val currentDay = getLocalDayOfForecast(forecast, forecastResponse.utcOffsetMinutes)
 
       val dayChanged = lastDay != currentDay
 
@@ -87,8 +88,8 @@ class DrawableWidget(private val forecasts: Array<Forecast>,
       }
 
 
-      val swellHeight = forecast.swell.components.combined.height
-      val waveBarHeight = min(swellHeight, config.swellMaxHeightFeet)/config.swellMaxHeightFeet * barHeight
+      val swellHeight = convert(forecast.swell.significantHeight, LengthUnit.METER, LengthUnit.FOOT)
+      val waveBarHeight = min(swellHeight, config.swellMaxHeight)/config.swellMaxHeight * barHeight
 
 //      println("barIndex=$i posLeft=$posLeft swellHeight=$swellHeight waveHeight=$waveBarHeight barWidth=$barWidth")
 

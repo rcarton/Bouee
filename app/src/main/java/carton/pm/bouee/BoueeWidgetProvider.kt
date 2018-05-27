@@ -18,9 +18,9 @@ import carton.pm.bouee.forecast.EXTRA_FORECAST_PAYLOAD_ID
 import carton.pm.bouee.forecast.EXTRA_FORECAST_SPOT_ID
 import carton.pm.bouee.forecast.EXTRA_FORECAST_SPOT_NAME
 import carton.pm.bouee.forecast.ForecastReceiver
-import carton.pm.bouee.forecast.msw.ForecastConfig
-import carton.pm.bouee.forecast.msw.ForecastResponse
-import carton.pm.bouee.forecast.msw.ForecastService
+import carton.pm.bouee.forecast.quickswell.ForecastConfig
+import carton.pm.bouee.forecast.quickswell.ForecastResponse
+import carton.pm.bouee.forecast.quickswell.ForecastService
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 
@@ -99,14 +99,14 @@ class BoueeWidgetProvider() : AppWidgetProvider() {
     }
   }
 
-  private fun createRenderedBitmap(forecasts: ForecastResponse, spotName: String): Bitmap {
+  private fun createRenderedBitmap(forecastResponse: ForecastResponse, spotName: String): Bitmap {
     Log.d(BoueeWidgetProvider::class.toString(), "Creating forecast bitmap")
     val config = WidgetConfig(spotName=spotName)
 
     val bitmap = Bitmap.createBitmap(config.width, config.height, Bitmap.Config.ARGB_8888)
     val canvas = Canvas(bitmap)
 
-    val drawable = DrawableWidget(forecasts, config)
+    val drawable = DrawableWidget(forecastResponse, config)
     drawable.draw(canvas)
 
     return bitmap
@@ -148,9 +148,9 @@ class BoueeWidgetProvider() : AppWidgetProvider() {
 //      appWidgetManager.updateAppWidget(widgetId, widget)
     }
 
-    override fun doInBackground(vararg params: Int?): ForecastResponse {
+    override fun doInBackground(vararg params: Int?): ForecastResponse? {
       try {
-        val spotId = params[0] ?: 384
+        val spotId = params[0] ?: 1
 
         //    val objectMapper = jacksonObjectMapper()
         //    objectMapper.registerModule(JavaTimeModule())
@@ -162,14 +162,14 @@ class BoueeWidgetProvider() : AppWidgetProvider() {
         //    return objectMapper.readValue(forecastJson)
 
         // Get the forecast config
-        val forecastConfig = ForecastConfig(apiKey = context.getString(R.string.msw_key))
+        val forecastConfig = ForecastConfig(baseUrl = context.getString(R.string.qs_base_url))
         val forecastService = ForecastService(forecastConfig)
 
         // Get the forecast
-        return forecastService.getForecasts(spotId)
+        return forecastService.getForecastResponse(spotId)
       } catch (e: Exception) {
         this.exception = e
-        return emptyArray()
+        return null
       }
     }
   }
