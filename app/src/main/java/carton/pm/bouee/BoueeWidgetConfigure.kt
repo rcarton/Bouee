@@ -50,6 +50,7 @@ class BoueeWidgetConfigure : Activity() {
       finish()
     }
 
+    // TODO: wot? there's no cancel button
     // Cancel
     findViewById<Button>(R.id.button_cancel).setOnClickListener {
       val context = this

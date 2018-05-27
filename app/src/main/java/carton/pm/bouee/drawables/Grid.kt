@@ -6,13 +6,12 @@ import android.graphics.ColorFilter
 import android.graphics.Paint
 import android.graphics.drawable.Drawable
 
-class Grid(width: Float, height: Float, maxWaveHeight: Float): Drawable() {
+private val SIZES = intArrayOf(2, 4, 6, 8)
 
-  val width = width
-  val height = height
-  val maxWaveHeight = maxWaveHeight
+class Grid(private val width: Float, private val height: Float, private val maxWaveHeight: Float) :
+    Drawable() {
 
-  val gridPaint = Paint()
+  private val gridPaint = Paint()
   init {
     gridPaint.style = Paint.Style.STROKE
     gridPaint.color = Color.parseColor("#88424242")
@@ -27,12 +26,15 @@ class Grid(width: Float, height: Float, maxWaveHeight: Float): Drawable() {
     canvas.drawLine(0f, 0f, 0f, height, gridPaint)
     canvas.drawLine(width-1, 0f, width-1, height, gridPaint)
 
-    val sizes = intArrayOf(2, 4, 6, 8)
-    for (size in sizes) {
+    for (size in SIZES) {
       // Y starts at 0 at the top
       val y = height - (size/maxWaveHeight*height)
       canvas.drawLine(0f, y, width, y, gridPaint)
     }
+  }
+
+  fun getHeightBetweenLines(): Float {
+    return height / SIZES.size
   }
 
   fun drawDayLine(canvas: Canvas, x: Float) {

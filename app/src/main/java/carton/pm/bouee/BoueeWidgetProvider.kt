@@ -13,6 +13,7 @@ import android.view.View.GONE
 import android.view.View.VISIBLE
 import android.widget.RemoteViews
 import carton.pm.bouee.drawables.DrawableWidget
+import carton.pm.bouee.drawables.WidgetConfig
 import carton.pm.bouee.forecast.EXTRA_FORECAST_PAYLOAD_ID
 import carton.pm.bouee.forecast.EXTRA_FORECAST_SPOT_ID
 import carton.pm.bouee.forecast.EXTRA_FORECAST_SPOT_NAME
@@ -100,10 +101,12 @@ class BoueeWidgetProvider() : AppWidgetProvider() {
 
   private fun createRenderedBitmap(forecasts: ForecastResponse, spotName: String): Bitmap {
     Log.d(BoueeWidgetProvider::class.toString(), "Creating forecast bitmap")
-    val bitmap = Bitmap.createBitmap(1080, 1080/5, Bitmap.Config.ARGB_8888)
+    val config = WidgetConfig(spotName=spotName)
+
+    val bitmap = Bitmap.createBitmap(config.width, config.height, Bitmap.Config.ARGB_8888)
     val canvas = Canvas(bitmap)
 
-    val drawable = DrawableWidget(forecasts, spotName)
+    val drawable = DrawableWidget(forecasts, config)
     drawable.draw(canvas)
 
     return bitmap

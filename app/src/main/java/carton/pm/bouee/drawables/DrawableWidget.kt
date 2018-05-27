@@ -10,14 +10,15 @@ import java.time.Instant
 import java.time.LocalDate
 
 // STYLE
-const val PADDING_BETWEEN_DAYS = 0f
 const val STATUS_BAR_HEIGHT = 38
 const val MAX_WAVE_HEIGHT_FT = 10f
 
-class DrawableWidget(private val forecasts: Array<Forecast>, spotName: String): Drawable() {
+const val TAG = "DrawableWidget"
+
+class DrawableWidget(private val forecasts: Array<Forecast>,
+                     private val config: WidgetConfig) : Drawable() {
 
   private val barPaint = Paint()
-  private val spotName = spotName
 
   init {
     barPaint.isAntiAlias = true
@@ -42,8 +43,8 @@ class DrawableWidget(private val forecasts: Array<Forecast>, spotName: String): 
     }
 
     // Save
-    val height = canvas.height.toFloat() - STATUS_BAR_HEIGHT - 5
-    val width = canvas.width.toFloat()
+    val gridHeight = config.height.toFloat() - STATUS_BAR_HEIGHT - 5
+    val gridWidth = config.width.toFloat()
 
     val numberOfDaysInForecast = getNumberOfDaysInForecast(forecasts)
 
@@ -52,39 +53,49 @@ class DrawableWidget(private val forecasts: Array<Forecast>, spotName: String): 
     statusBarPaint.isAntiAlias = true
     statusBarPaint.color = Color.parseColor("#88000000")
     statusBarPaint.textSize = STATUS_BAR_HEIGHT.toFloat()
-    canvas.drawText("$spotName ${Instant.now()}", 0f, canvas.height.toFloat() - 5 , statusBarPaint)
+    canvas.drawText("${config.spotName} ${Instant.now()}", 0f, config.height.toFloat() - 5 , statusBarPaint)
 
     // Draw the grid
-    val grid = Grid(width, height, MAX_WAVE_HEIGHT_FT)
+    val grid = Grid(gridWidth, gridHeight, config.swellMaxHeightFeet)
     grid.draw(canvas)
 
-    // Figure out the width of a bar
-    val barWidth = (width - (numberOfDaysInForecast - 1) * PADDING_BETWEEN_DAYS) / forecasts.size
-    val barHeight = height
+    // Days
+    val daysHeight = grid.getHeightBetweenLines() * .8f
+    val days = Days(daysHeight)
 
-    val dayPadding = width * PADDING_BETWEEN_DAYS
+    // Figure out the width of a bar
+    val barWidth = gridWidth / forecasts.size
+    val barHeight = gridHeight
 
     var lastDay: LocalDate = getLocalDayOfForecast(forecasts[0])
     var posLeft = 0f
-    forecasts.forEachIndexed { i, forecast ->
 
-      // If the days changed, add the day padding
+    forecasts.forEachIndexed { i, forecast ->
       val currentDay = getLocalDayOfForecast(forecast)
-      if (lastDay != currentDay) {
-        posLeft += dayPadding
+
+      val dayChanged = lastDay != currentDay
+
+      // If the day changed, add the day padding and draw a line
+      if (dayChanged) {
         lastDay = currentDay
         grid.drawDayLine(canvas, posLeft)
       }
 
+      if (i == 0 || dayChanged) {
+        // Draw the 3 letter day
+        if (config.showDays) days.drawDay(canvas, posLeft + 2, daysHeight - 2, currentDay.dayOfWeek)
+      }
+
+
       val swellHeight = forecast.swell.components.combined.height
-      val waveBarHeight = min(swellHeight, MAX_WAVE_HEIGHT_FT)/MAX_WAVE_HEIGHT_FT * barHeight
+      val waveBarHeight = min(swellHeight, config.swellMaxHeightFeet)/config.swellMaxHeightFeet * barHeight
 
 //      println("barIndex=$i posLeft=$posLeft swellHeight=$swellHeight waveHeight=$waveBarHeight barWidth=$barWidth")
 
 
       // TODO: different color for the weekend?
 //      println(RectF(posLeft, height-waveBarHeight, posLeft+barWidth, height))
-      canvas.drawRect(RectF(posLeft, height-waveBarHeight, posLeft+barWidth+1f, height), barPaint)
+      canvas.drawRect(RectF(posLeft, gridHeight-waveBarHeight, posLeft+barWidth+1f, gridHeight), barPaint)
       posLeft += barWidth
     }
   }
